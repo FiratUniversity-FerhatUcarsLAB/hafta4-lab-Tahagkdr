@@ -1,60 +1,34 @@
-/*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
- * Aciklama: Gorev 1 - Ogrenci Bilgi Sistemi
- * 
- * Bu program kullanicidan ogrenci bilgilerini alir ve
- * duzenli bir formatta ekrana yazdirir.
- * Diğer java dosyalarının başında da bu örnek formattaki gibi kısa bilgi giriniz
- */
-
 import java.util.Scanner;
 
-public class OgrenciBilgi {
+public class ogrenciBilgi {
     public static void main(String[] args) {
-        // Scanner objesi olusturun
-        
-        
-        // Degisken tanimlamalari
-        // String ad, soyad;
-        // int ogrenciNo, yas;
-        // double gpa;
-        
-        
-        // Kullanicidan bilgileri alin
-        System.out.println("=== OGRENCI BILGI SISTEMI ===");
-        System.out.println();
-        
-        // Ad
-        
-        
-        // Soyad
-        
-        
-        // Ogrenci No
-        
-        
-        // Yas
-        
-        
-        // GPA
-        
-        
-        // Bilgileri ekrana yazdirin
-        System.out.println("\n=== OGRENCI BILGI SISTEMI ===");
-        
-        // COZUMUNUZU BURAYA YAZIN
-        
-        
-        
-        
-        
-        
+        Scanner input = new Scanner(System.in);
 
-        
-        
-        // Scanner'i kapatin (önemli pratik)
-        
+        System.out.print("Adınızı girin: ");
+       String ad = input.nextLine();
+
+        System.out.print("Soyadınız girin");
+        String soyad = input.nextLine();
+
+        System.out.print("Ögrenci numarası girin");
+        int numaras = input.nextInt();
+
+        System.out.print("Yaşınızı girin" );
+        int yaş= input.nextInt();
+
+        System.out.println("GPA (0.00-4.00):  ");
+        float gpa= input.nextFloat();
+
+
+        System.out.println("===ÖGRENCİ BİLGİ SİSTEMİ===");
+        System.out.printf("Ad Soydad: %s  %s", "ad, soyad" );
+        System.out.printf("\nOgrenci No : %d", "orencino");
+        System.out.printf("\nYaş  %d , yaş");
+        System.out.printf("\nGPA:%2f", "gpa");
+
+
+
+
+
     }
 }
